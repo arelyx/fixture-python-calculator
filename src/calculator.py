@@ -51,10 +51,10 @@ def divide(a: float, b: float) -> float:
         Quotient of a and b
 
     Raises:
-        ZeroDivisionError: If b is zero
+        ValueError: If b is zero
     """
     if b == 0:
-        raise ZeroDivisionError("Cannot divide by zero")
+        raise ValueError("Cannot divide by zero")
     return a / b
 
 
