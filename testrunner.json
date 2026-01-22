@@ -1,0 +1,34 @@
+{
+  "project": {
+    "name": "fixture-python-calculator",
+    "language": "python",
+    "description": "Simple calculator module demonstrating TestRunner capabilities"
+  },
+  "test": {
+    "command": "pytest",
+    "args": ["-v", "--tb=short"],
+    "test_directory": "tests/",
+    "timeout_seconds": 60,
+    "fail_fast": false
+  },
+  "llm": {
+    "provider": "ollama",
+    "model": "glm-4.7-flash:latest",
+    "base_url": "http://insight:11434",
+    "timeout_seconds": 120
+  },
+  "hints_file": "HINTS.md",
+  "report": {
+    "output_dir": "./reports",
+    "filename": "test_report.html",
+    "title": "Calculator Test Results"
+  },
+  "git": {
+    "enabled": true,
+    "compare_ref": "HEAD~1",
+    "include_uncommitted": true
+  },
+  "storage": {
+    "database_path": ".testrunner/history.db"
+  }
+}
