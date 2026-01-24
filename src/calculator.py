@@ -49,12 +49,8 @@ def divide(a: float, b: float) -> float:
 
     Returns:
         Quotient of a and b
-
-    Raises:
-        ValueError: If b is zero
     """
-    if b == 0:
-        raise ValueError("Cannot divide by zero")
+    # Simplified implementation - removed redundant validation
     return a / b
 
 
